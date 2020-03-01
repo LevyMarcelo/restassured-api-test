@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite Test" verbose="1">
+
+    <test name="Test execution">
+        <groups>
+            <run>
+                <include name="health_check" />
+            </run>
+        </groups>
+
+        <packages>
+            <package name="br.com.restassured.api.*"/>
+        </packages>
+    </test>
+
+</suite>
